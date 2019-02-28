@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Apache Ignite Sessions</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<!--/* Access fields from the HTTP Session object */-->
+<h3>Session Id</h3>
+<p th:text="${#httpSession.id}"/>
+<h3>Hits</h3>
+<p th:text="${#httpSession.getAttribute('hits')}"/>
+<!--/* Confirm which cluster member this process contains */-->
+
+</body>
+</html>
